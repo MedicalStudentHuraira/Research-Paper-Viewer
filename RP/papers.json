@@ -1,0 +1,29 @@
+[
+    {
+        "id": "neural-networks-survey",
+        "title": "A Comprehensive Survey of Modern Neural Network Architectures",
+        "filename": "neural_networks_survey.md",
+        "authors": ["Jane Smith", "John Doe", "Alice Johnson"],
+        "year": 2023,
+        "description": "This paper provides a comprehensive survey of modern neural network architectures, including transformers, CNNs, and RNNs, with a focus on their applications in natural language processing and computer vision.",
+        "tags": ["neural networks", "deep learning", "survey", "machine learning"]
+    },
+    {
+        "id": "attention-mechanisms",
+        "title": "Attention Mechanisms in Deep Learning: A Survey",
+        "filename": "attention_mechanisms.md",
+        "authors": ["Robert Chen", "Emily Zhang"],
+        "year": 2023,
+        "description": "We explore various attention mechanisms in deep learning, their mathematical foundations, and their applications in different domains.",
+        "tags": ["attention mechanisms", "deep learning", "transformers", "nlp"]
+    },
+    {
+        "id": "self-supervised-learning",
+        "title": "Self-Supervised Learning: The Dark Matter of Intelligence",
+        "filename": "self_supervised_learning.md",
+        "authors": ["Yann LeCun", "Ishan Misra"],
+        "year": 2022,
+        "description": "This paper discusses the importance of self-supervised learning in the quest for more general artificial intelligence systems.",
+        "tags": ["self-supervised learning", "deep learning", "representation learning"]
+    }
+]
