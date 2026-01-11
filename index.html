@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Research Papers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Academic Research Papers</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search papers by title, author, or keyword..." class="search-input" autocomplete="off">
+            </div>
+        </header>
+        
+        <main>
+            <div id="loadingIndicator" class="loading-indicator">
+                <div class="spinner"></div>
+                <p>Loading research papers...</p>
+            </div>
+            
+            <div id="paperList" class="papers-container">
+                <!-- Papers will be loaded here dynamically -->
+            </div>
+            
+            <div id="pagination" class="pagination-container">
+                <!-- Pagination will be inserted here -->
+            </div>
+            
+            <div id="paperView" class="paper-view hidden">
+                <div class="paper-header">
+                    <button id="backButton" class="back-button">← Back to Papers</button>
+                    <div class="paper-meta">
+                        <span id="paperDate" class="paper-date"></span>
+                        <span id="paperAuthors" class="paper-authors"></span>
+                    </div>
+                </div>
+                <h1 id="paperTitle" class="paper-title"></h1>
+                <div id="paperContent" class="paper-content"></div>
+                <div class="paper-footer">
+                    <div id="paperTags" class="paper-tags"></div>
+                </div>
+            </div>
+            
+            <div id="noResults" class="no-results hidden">
+                <p>No papers found matching your search. Try different keywords.</p>
+            </div>
+        </main>
+        
+        <footer class="site-footer">
+            <p>Academic Research Papers &copy; <span id="currentYear"></span></p>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
